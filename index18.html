@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Отключение правой кнопки на картинках</title>
+	<script>
+		var message = "Правая кнопка мыши отключена!";
+		function click(e) 
+		{
+			if (document.all)
+			{
+				if (event.button == 2)
+				{
+					alert (message);
+					return false;
+				}
+			}
+			
+			if (document.layers)
+			{
+				if (e.wich == 3)
+				{
+					alert (message);
+					return false;
+				}
+			}
+		};
+
+			if (document.layers) {document.captureEvents (Events.MOUSEDOWN);}
+			document.onmousedown = click;
+			document.oncontextmenu = function (e) {return false;}		
+		
+	</script>
+</head>
+<body>
+<h2>Картинки</h2>
+<img src="cat0.jpg" alt="cat" width=320 height=240 onmousedown="click(e)">	
+</body>
+</html>

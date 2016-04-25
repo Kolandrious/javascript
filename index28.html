@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Пример работы с пользователем</title>
+</head>
+<body>
+	Введите слово. <br>
+	<script>
+		where=window.prompt("Куда заглянем сегодня?");
+		switch (where)
+		{
+			case "Вконтакте" :
+			window.location = "http://vk.com";
+			break;
+			case "Одноклассники" :
+			window.location = "http://ok.ru";
+			break;
+			case "Фейсбук" :
+			window.location = "http://facebook.com";
+			break;
+			case "Инстаграм" :
+			window.location = "http://instagram.com";
+			break;
+			case "Твиттер" :
+			window.location = "http://twitter.com";
+			break;
+			default :
+			window.location = "http://exam.by";
+			break;
+		}
+	</script>
+</body>
+</html>

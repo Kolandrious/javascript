@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index24</title>
+</head>
+<body>
+	<script>
+		var a = prompt ("Enter integer a:"), b = prompt ("Enter integer b:"), result;
+		a = parseInt (a);
+		b = parseInt (b);
+		alert ("a = " + a + ", b = " + b);
+		/*
+		if (Math.sqrt(a*b) < 4)
+		{
+			result = 'Мало';
+		}
+		else
+		{
+			result = 'Много';
+		}
+		alert (result);
+		*/
+		((a*b) < 0) ? result = 'Uve entered not a valid numbers' : (Math.sqrt(a*b) < 4) ? result = 'Мало' : result = 'Много';
+		//(Math.sqrt(a*b) < 4) ? result = 'Мало' : result = 'Много';
+		alert (result);
+	</script>
+</body>
+</html>

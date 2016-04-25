@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Varian1-3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('button').click (function () {
+				$('p:eq(2)').animate({right: '100px'}, 'slow');
+				$('p:eq(4)').animate({right: '100px'}, 'slow');
+			});
+			$('img').click (function () {
+				$(this).animate({top: '30px'}, 'slow');
+			})
+		});
+	</script>
+	<style>
+		p {
+			position: relative;
+		}
+		img {
+			position: relative;			
+		}
+	</style>
+</head>
+<body>
+	<button>CLICKME</button>
+	<p>1 Lorem ipsum dolor sit amet. 1</p>
+	<img src="cat0.jpg" alt="" width="100">
+	<p>2 Lorem ipsum dolor sit amet, consectetur. 2</p>
+	<img src="cat1.jpg" alt="" width="100">
+	<p>3 Lorem ipsum dolor. 3</p>
+	<img src="cat2.jpg" alt="" width="100">
+	<p>4 Lorem ipsum dolor sit. 4</p>
+	<img src="cat0.jpg" alt="" width="100">
+	<p>5 Lorem ipsum dolor sit amet, consectetur adipisicing. 5</p>
+</body>
+</html>

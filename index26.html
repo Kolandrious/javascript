@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index26</title>
+</head>
+<body>
+	<script>
+		var a = prompt ("Enter integer a:"), b = prompt ("Enter integer b:"), c = prompt ("Enter integer c:"), result;
+		a = parseInt (a);
+		b = parseInt (b);
+		c = parseInt (c);
+		alert ("a = " + a + ", b = " + b + ", c = " + c);
+		((a*b*c) === 0) ? result = 'Неверные стороны треугольника' : ((a*a+b*b) === c*c) ? result = 'Ура: Вы угадали длины сторон треугольника!' : result = 'Надо учить теорему';
+		alert (result);
+	</script>
+</body>
+</html>

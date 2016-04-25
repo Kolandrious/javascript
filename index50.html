@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index50</title>
+	<script>
+		function newColor (color) {
+			alert ("Вы выбрали " + color)
+			document.bgColor = color;
+		}
+	</script>
+</head>
+<body>
+	<p>Выберите цвет фона</p>
+	<form>
+		<input type="button" value="серый" onclick="newColor('gray')">
+		<input type="button" value="светло-серый" onclick="newColor('lightgray')">
+	</form>
+</body>
+</html>

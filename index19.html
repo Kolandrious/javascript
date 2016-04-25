@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Выбери правильный ответ</title>
+	<script>
+		var flag = 1;
+		function clickMe ()
+		{
+			if (flag == 1) {
+				document.getElementById("but").style.top = "90px";
+				document.getElementById("but").style.left = "300px";
+			}
+			if (flag == 2) {
+				document.getElementById("but").style.top = "120px";
+				document.getElementById("but").style.left = "100px";
+			}
+			if (flag == 3) {
+				document.getElementById("but").style.top = "30px";
+				document.getElementById("but").style.left = "100px";
+			}
+			flag = flag + 1;
+			if (flag == 4) flag = 1;
+		}
+	</script>
+</head>
+<body>
+<h2>Выбери правильный ответ</h2>
+<p>Вам нравится наш сайт?</p>
+<button style="position: absolute; left: 100px; top: 120px; width: 50px; height: 50px;" onclick="alert('Большое спасибо!')">Да</button>
+<button id="but" style="position: absolute; left: 200px; top: 120px; width: 50px; height: 50px;" onmouseover="clickMe()">Нет</button>	
+</body>
+</html>

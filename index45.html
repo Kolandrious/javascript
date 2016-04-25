@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index45</title>
+</head>
+<body>
+	<script>
+		function checkAge () {
+			var age = prompt ("Ваш возраст?");
+			if (age > 18) alert ("Доступ разрешён");
+			else {
+				var parentsConfirmed = confirm ("Родители разрешили?");
+				if (parentsConfirmed) alert ("Доступ разрешён");
+				else alert ("В доступе отказано");
+			}
+		}
+		checkAge();
+	</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index76</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('button').click(function () {
+				var div = $('div');
+				div.animate({left: '100px'}, 'slow');
+				div.animate({fontSize: '3em'}, 'slow');
+			});
+		});
+	</script>
+</head>
+<body>
+	<button>Запустить анимацию!</button>
+	<p>По умолчанию, все HTML элементы имеют статическое позиционирование и не могут быть перемещены. Чтобы управлять позиционированием, помните, что в первую очередь, нужно задать CSS-свойство позиционирования элемента: относительное, фиксированное, или абсолютное! </p>
+	<div style="background:#98bf21; height:130px; width:320px; position: absolute;">Виталий Валентинович</div>
+</body>
+</html>

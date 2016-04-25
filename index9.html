@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index9</title>
+</head>
+<body>
+<button onclick="myFunction()">Нажми меня, please!</button>
+<button onclick="showUsers()">Показать пользователей!</button>
+<p id="users"></p>
+
+
+	<script>
+		var name = "Виталий Валентинович";
+		var admin = name;
+		alert(admin);
+		var myFunction = function () 
+		{
+			document.getElementById("users").innerHTML="admin: " + admin + "<br>" + "name: " + name;
+			//document.write("admin: " + admin + "<br>");
+			//document.write("name: " + name + "<br>");
+		}
+		var changeAdmin = function ()
+		{
+			admin = "Владислав Вадимович";
+		}
+		var showUsers = function ()
+		{
+			alert("admin: " + admin + " name: " + name);
+		}
+		changeAdmin();
+	</script>
+</body>
+</html>

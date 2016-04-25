@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index69</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('input').focus(function () {
+				$(this).css('background-color', '#cccccc');
+			});
+			$('input').blur(function () {
+				$(this).css('background-color', 'red');
+			});
+		});
+	</script>
+</head>
+<body>
+	Имя пользователя: <input type='text' name='fullname'><br>
+	E-mail пользователя: <input type='text' name='email'>
+</body>
+</html>
